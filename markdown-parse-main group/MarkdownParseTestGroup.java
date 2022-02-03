@@ -12,47 +12,47 @@ import static org.junit.Assert.*;
 public class MarkdownParseTestGroup {
     @Test
     public void testEmpty() throws IOException {
-        assertLinks(List.of(), "C:/Users/mrmus/OneDrive/Desktop/CSE12 PA/markdown-parse-main group/testCases/emptyGroup.md");
+        assertLinks(List.of(), "emptyGroup.md");
     }
 
     @Test
     public void testExtraSpace() throws IOException {
-        assertLinks(List.of(), "C:/Users/mrmus/OneDrive/Desktop/CSE12 PA/markdown-parse-main group/testCases/extraSpaceGroup.md");
+        assertLinks(List.of(), "extraSpaceGroup.md");
     }
 
     @Test
     public void testEscape() throws IOException {
-        assertLinks(List.of("https://somethingelse.com"), "C:/Users/mrmus/OneDrive/Desktop/CSE12 PA/markdown-parse-main group/testCases/escapeGroup.md");
+        assertLinks(List.of("https://somethingelse.com"), "escapeGroup.md");
     }
 
     @Test
     public void testJustEscape() throws IOException {
-        assertLinks(List.of(), "C:/Users/mrmus/OneDrive/Desktop/CSE12 PA/markdown-parse-main group/testCases/justEscapeGroup.md");
+        assertLinks(List.of(), "justEscapeGroup.md");
     }
 
     @Test
     public void testImage() throws IOException {
-        assertLinks(List.of(), "C:/Users/mrmus/OneDrive/Desktop/CSE12 PA/markdown-parse-main group/testCases/imageGroup.md");
+        assertLinks(List.of(), "imageGroup.md");
     }
 
     @Test
     public void testJustBrackets() throws IOException {
-        assertLinks(List.of(), "C:/Users/mrmus/OneDrive/Desktop/CSE12 PA/markdown-parse-main group/testCases/justBracketsGroup.md");
+        assertLinks(List.of(), "justBracketsGroup.md");
     }
 
     @Test
     public void testJustParentheses() throws IOException {
-        assertLinks(List.of(), "C:/Users/mrmus/OneDrive/Desktop/CSE12 PA/markdown-parse-main group/testCases/justParenthesesGroup.md");
+        assertLinks(List.of(), "justParenthesesGroup.md");
     }
 
     @Test
     public void testMultiline() throws IOException {
-        assertLinks(List.of("https://isthisfound.com"), "C:/Users/mrmus/OneDrive/Desktop/CSE12 PA/markdown-parse-main group/testCases/multilineGroup.md");
+        assertLinks(List.of("multilineGroup.md");
     }
 
     @Test
     public void testLastLine() throws IOException {
-        assertLinks(List.of("last line link should be found"), "C:/Users/mrmus/OneDrive/Desktop/CSE12 PA/markdown-parse-main group/testCases/lastLineGroup.md");
+        assertLinks(List.of("last line link should be found"), "lastLineGroup.md");
     }
 
     public static void assertLinks(List<String> expectedLinks, String fileName) throws IOException {
