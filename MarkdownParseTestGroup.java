@@ -10,11 +10,11 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 public class MarkdownParseTestGroup {
-    @Test
+    /**@Test
     public void testEmpty() throws IOException {
         assertLinks(List.of(), "emptyGroup.md");
     }
-
+    */
     @Test
     public void testExtraSpace() throws IOException {
         assertLinks(List.of(), "extraSpaceGroup.md");
