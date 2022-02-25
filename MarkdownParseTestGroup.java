@@ -17,42 +17,42 @@ public class MarkdownParseTestGroup {
     */
     @Test
     public void testExtraSpace() throws IOException {
-        assertLinks(List.of(), "C:/Users/mrmus/OneDrive/Desktop/Github projects/MarkDownParseGroup/extraSpaceGroup.md");
+        assertLinks(List.of(), "extraSpaceGroup.md");
     }
 
     @Test
     public void testEscape() throws IOException {
-        assertLinks(List.of("https://somethingelse.com"), "C:/Users/mrmus/OneDrive/Desktop/Github projects/MarkDownParseGroup/escapeGroup.md");
+        assertLinks(List.of("https://somethingelse.com"), "escapeGroup.md");
     }
 
     @Test
     public void testJustEscape() throws IOException {
-        assertLinks(List.of(), "C:/Users/mrmus/OneDrive/Desktop/Github projects/MarkDownParseGroup/justEscapeGroup.md");
+        assertLinks(List.of(), "justEscapeGroup.md");
     }
 
     @Test
     public void testImage() throws IOException {
-        assertLinks(List.of(), "C:/Users/mrmus/OneDrive/Desktop/Github projects/MarkDownParseGroup/imageGroup.md");
+        assertLinks(List.of(), "imageGroup.md");
     }
 
     @Test
     public void testJustBrackets() throws IOException {
-        assertLinks(List.of(), "C:/Users/mrmus/OneDrive/Desktop/Github projects/MarkDownParseGroup/justBracketsGroup.md");
+        assertLinks(List.of(), "justBracketsGroup.md");
     }
 
     @Test
     public void testJustParentheses() throws IOException {
-        assertLinks(List.of(), "C:/Users/mrmus/OneDrive/Desktop/Github projects/MarkDownParseGroup/justParenthesesGroup.md");
+        assertLinks(List.of(), "justParenthesesGroup.md");
     }
 
     @Test
     public void testMultiline() throws IOException {
-        assertLinks(List.of("https://isthisfound.com"), "C:/Users/mrmus/OneDrive/Desktop/Github projects/MarkDownParseGroup/multilineGroup.md");
+        assertLinks(List.of("https://isthisfound.com"), "multilineGroup.md");
     }
 
     @Test
     public void testLastLine() throws IOException {
-        assertLinks(List.of("last line link should be found"), "C:/Users/mrmus/OneDrive/Desktop/Github projects/MarkDownParseGroup/lastLineGroup.md");
+        assertLinks(List.of("last line link should be found"), "lastLineGroup.md");
     }
 
     public static void assertLinks(List<String> expectedLinks, String fileName) throws IOException {
